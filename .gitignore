@@ -1,0 +1,8 @@
+# Dependencias: se reinstalan con npm install
+node_modules/
+
+# Documentación que genera JSDoc en local y en el pipeline
+docs/api/
+
+# Variables de entorno con claves: nunca al repositorio
+.env
