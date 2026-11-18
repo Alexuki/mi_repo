@@ -17,11 +17,18 @@ Para poder ejecutarlo se requiere tener instalado Node.js 22 o superior, que inc
    cd mi_repo
    ```
 
-2. Ejecutar el ejemplo:
+2. Instalar las dependencias:
 
    ```bash
-   node src/index.js
+   npm install
    ```
+
+3. Ejecutar el ejemplo:
+
+   ```bash
+   npm start
+   ```
+
 
 ## Uso
 
