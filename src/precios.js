@@ -47,3 +47,13 @@ export function calcularImpuesto(precio, porcentaje = 21) {
   }
   return redondear(precio * porcentaje / 100);
 }
+
+/**
+ * Suma a un precio el impuesto correspondiente.
+ * @param {number} precio Precio sin impuesto.
+ * @param {number} [porcentaje=21] Porcentaje del impuesto.
+ * @returns {number} Precio con el impuesto incluido, redondeado a 2 decimales.
+ */
+export function aplicarImpuesto(precio, porcentaje = 21) {
+  return redondear(precio + calcularImpuesto(precio, porcentaje));
+}
