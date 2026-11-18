@@ -1,0 +1,25 @@
+{
+  "name": "mi_repo",
+  "version": "1.0.0",
+  "description": "Proyecto de JavaScript que contiene una librería de funciones para realizar cálculos con precios.",
+  "main": "src/precios.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexuki/mi_repo.git"
+  },
+  "keywords": [],
+  "author": "Alejandro Martínez Corral",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Alexuki/mi_repo/issues"
+  },
+  "homepage": "https://github.com/Alexuki/mi_repo#readme",
+  "devDependencies": {
+    "eslint": "^10.15.0"
+  }
+}
