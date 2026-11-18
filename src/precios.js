@@ -34,3 +34,16 @@ export function aplicarDescuento(precio, porcentaje) {
   }
   return redondear(precio * (1 - porcentaje / 100));
 }
+
+/**
+ * Calcula el importe de un impuesto (por ejemplo, el IVA) sobre un precio.
+ * @param {number} precio Precio sin impuesto.
+ * @param {number} [porcentaje=21] Porcentaje del impuesto. Por defecto, el IVA general en España (21 %).
+ * @returns {number} Importe del impuesto, redondeado a 2 decimales.
+ */
+export function calcularImpuesto(precio, porcentaje = 21) {
+  if (porcentaje < 0 || porcentaje > 100) {
+    throw new RangeError('El impuesto debe estar entre 0 y 100');
+  }
+  return redondear(precio * porcentaje / 100);
+}
