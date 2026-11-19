@@ -39,7 +39,7 @@ export function aplicarDescuento(precio, porcentaje) {
   if (porcentaje < 0 || porcentaje > 100) {
     throw new RangeError('El porcentaje de descuento no puede ser menor que 0 ni mayor que 100');
   }
-  return redondear(precio * (1 + porcentaje / 100));
+  return redondear(precio * (1 - porcentaje / 100));
 }
 
 /**
