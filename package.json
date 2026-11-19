@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "jsdoc src -d docs/api -R README.md"
+    "docs": "jsdoc src -d docs/api -R README.md",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   },
   "homepage": "https://github.com/Alexuki/mi_repo#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "eslint": "^10.15.0",
+    "globals": "^17.14.0",
     "jsdoc": "^4.0.5"
   }
 }
